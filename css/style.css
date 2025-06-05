@@ -1,0 +1,149 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@200;400;500&display=swap");
+
+body {
+  font-family: "Noto Sans CJK TC", "Microsoft JhengHei", PingFang, STHeiti,
+    sans-serif, serif;
+}
+
+
+.wrap {
+  width: 1920px;
+  display: flex;
+  justify-content: center;
+}
+.wrap ul {
+  width: 1288px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card {
+  width: 416px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.card-image {
+  width: 416px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.card-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.card-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.hashtags {
+  display: flex;
+  align-items: center;
+}
+.hashtags-link {
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-right: 5px;
+}
+.popular {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  color: white;
+  background: #0027d5;
+}
+.card-title{
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+.card-article {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.card-readmore-btn{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #000;
+  padding: 12px;
+  border-radius: 40px;
+  font-size: 14px;
+  color: #000;
+  margin-top: 16px;
+  margin-right: auto;
+}
+.card-readmore-btn:hover{
+	color: white;
+	background: gray;
+}
