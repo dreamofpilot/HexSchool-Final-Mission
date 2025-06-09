@@ -273,7 +273,7 @@ header {
 
 .services {
   display: grid;
-  grid-template-columns: 3fr 2fr; // 圖片:文字 = 3:2
+  grid-template-columns: 3fr 2fr;
   align-items: center;
   gap: 0;
   margin-bottom: 24px;
@@ -773,6 +773,27 @@ footer {
   }
 }
 
+@media screen and (max-width: 1420px) {
+
+    .arrows {
+      position: static;
+      margin-top: 20px;
+      justify-content: center;
+      gap: 20px;
+      transform: none;
+    }
+
+    .arrow-left,
+    .arrow-right {
+      position: static;
+    }
+
+    .appointment-now {
+      right: 0;
+    }
+}
+
+
 @media screen and (max-width: 1200px) {
     .hero-section-intro {
         padding: 20px 10px;
@@ -827,19 +848,6 @@ footer {
         &-hide {
           display: none;
         }
-    }
-
-    .arrows {
-      position: static;
-      margin-top: 20px;
-      justify-content: center;
-      gap: 20px;
-      transform: none;
-    }
-
-    .arrow-left,
-    .arrow-right {
-      position: static;
     }
 
     .appointment {

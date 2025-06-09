@@ -784,6 +784,22 @@ footer {
   border-top: 1px solid #6C757D;
 }
 
+@media screen and (max-width: 1420px) {
+  .arrows {
+    position: static;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+    transform: none;
+  }
+  .arrow-left,
+  .arrow-right {
+    position: static;
+  }
+  .appointment-now {
+    right: 0;
+  }
+}
 @media screen and (max-width: 1200px) {
   .hero-section-intro {
     padding: 20px 10px;
@@ -833,17 +849,6 @@ footer {
   }
   .card-hide {
     display: none;
-  }
-  .arrows {
-    position: static;
-    margin-top: 20px;
-    justify-content: center;
-    gap: 20px;
-    transform: none;
-  }
-  .arrow-left,
-  .arrow-right {
-    position: static;
   }
   .appointment {
     flex-direction: column;
